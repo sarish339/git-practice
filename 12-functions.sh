@@ -20,7 +20,7 @@ then
 fi
 
 dnf list installed git
-e
+
 
 if [ $? -ne 0 ]
 then
