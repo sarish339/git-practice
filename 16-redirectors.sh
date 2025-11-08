@@ -35,7 +35,7 @@ USAGE(){
     exit 1
 }
 
-echo "Script started executing:: $date"
+echo "Script started executing:: $(date)"
 
 CHECK_ROOT
 
