@@ -1,4 +1,4 @@
-#!/bin/bsh
+#!/bin/bash
 
 LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
@@ -21,7 +21,7 @@ CHECK_ROOT(){
 }
 
 VALIDATE(){
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
 then
     echo -e "$2 is $R failed $N" | tee -a $LOG_FILE
         exit 1
