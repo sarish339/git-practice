@@ -53,7 +53,7 @@ do
     then
         echo "$package is not installed, going to install it.."  | tee -a $LOG_FILE
         dnf install $package -y &>>$LOG_FILE
-        VALIDATE $? "Installing $package" &>>$LOG_FILE
+        VALIDATE $? "Installing $package"
     else
         echo -e "$package is already $Y installed.. nothing to do $N"  | tee -a $LOG_FILE
     fi
